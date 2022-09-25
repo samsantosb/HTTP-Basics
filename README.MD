@@ -110,14 +110,14 @@ The following are the most common HTTP headers:
   before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD
   respond with 202 (Accepted) response instead.
 
-# ACCEPTED
+## ACCEPTED
 
 - Accepted is a successful response. It is used when the request has been accepted for processing,
   but the processing has not been completed. The request might or might not eventually be acted upon,
   as it might be disallowed when processing actually takes place. There is no facility for re-sending a status
   code from an asynchronous operation such as this.
 
-# NO_CONTENT
+## NO_CONTENT
 
 - No Content is a successful response. It is used when the request has succeeded,
   but that there is no new information to send back in the response payload body.
