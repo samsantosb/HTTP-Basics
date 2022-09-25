@@ -40,7 +40,7 @@ Responses are grouped in five classes:
 
 - The HTTP response is the second message sent by the server to the client.
 
-## HTTP Headers\*/
+## HTTP Headers
 
 - A HTTP header consists of its case-insensitive name followed by a colon (:) and the value of the header.
   The general format of an HTTP header is:
