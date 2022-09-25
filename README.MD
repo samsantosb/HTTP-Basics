@@ -208,11 +208,6 @@ As respostas são agrupadas em cinco classes:
 
 - A resposta HTTP é a segunda mensagem enviada pelo servidor ao cliente.
 
-## Cabeçalhos HTTP\*/
-
-- Um cabeçalho HTTP consiste em seu nome que não diferencia maiúsculas de minúsculas seguido por dois pontos (:) e o valor do cabeçalho._/
-  O formato geral de um cabeçalho HTTP é:_/
-
 ## Corpo HTTP
 
 - O corpo da solicitação HTTP são os dados que são enviados ao servidor.
