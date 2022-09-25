@@ -24,7 +24,7 @@
 ## HTTP Status Codes
 
 The HTTP response status code indicates whether a specific HTTP request has been successfully completed.
-Responses are grouped in five classes:\*/
+Responses are grouped in five classes:
 
 - 1xx: Informational responses
 - 2xx: Successful responses
@@ -42,8 +42,8 @@ Responses are grouped in five classes:\*/
 
 ## HTTP Headers\*/
 
-- A HTTP header consists of its case-insensitive name followed by a colon (:) and the value of the header._/
-  The general format of an HTTP header is:_/
+- A HTTP header consists of its case-insensitive name followed by a colon (:) and the value of the header.
+  The general format of an HTTP header is:
 
 ## HTTP Body
 
@@ -67,15 +67,15 @@ Responses are grouped in five classes:\*/
 
 ## HTTP Header
 
-An HTTP header consists of its case-insensitive name followed by a colon (:) and the value of the header._/
-The general format of an HTTP header is:_/
-Header-Name: Header-Value\*
+An HTTP header consists of its case-insensitive name followed by a colon (:) and the value of the header.
+The general format of an HTTP header is:
+Header-Name: Header-Value
 
 The following are the most common HTTP headers:
 
 - Accept: The Accept request HTTP header advertises which content types, expressed as MIME types,
   the client is able to understand. Using content negotiation, the server selects one of the proposals,
-  uses it and informs the client of its choice with the Content-Type response header.\*/
+  uses it and informs the client of its choice with the Content-Type response header.
 - The Accept-Charset request HTTP header advertises which character sets the client is able to understand.
   Using content negotiation, the server selects one of the proposals, uses it and informs the client of its choice with the Content-Type response header
   Example: Accept-Charset: utf-8\*
@@ -84,9 +84,9 @@ The following are the most common HTTP headers:
 - Accept-Language: The Accept-Language request HTTP header advertises which languages the client is able to understand, and which locale variant is preferred. Using content negotiation, the server selects one of the proposals, uses it and informs the client of its choice with the Content-Type response header.
   Example: Accept-Language: en-US
 - Authorization: The Authorization request HTTP header contains the credentials to authenticate a user agent with a server, usually, but not necessarily, after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.
-  Example: Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==\*
+  Example: Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
 - Cache-Control: The Cache-Control general-header field is used to specify directives that must be obeyed by all caching mechanisms along the request/response chain
-  Example: Cache-Control: no-cache\*
+  Example: Cache-Control: no-cache
 
 ## STATUS CODE DETAILS
 
@@ -108,63 +108,63 @@ The following are the most common HTTP headers:
   from which the user or user agent can choose the one most appropriate. The entity format is specified
   by the media type given in the Content-Type header field. The origin server MUST create the resource
   before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD
-  respond with 202 (Accepted) response instead.\*/
+  respond with 202 (Accepted) response instead.
 
 # ACCEPTED
 
 - Accepted is a successful response. It is used when the request has been accepted for processing,
   but the processing has not been completed. The request might or might not eventually be acted upon,
   as it might be disallowed when processing actually takes place. There is no facility for re-sending a status
-  code from an asynchronous operation such as this.\*/
+  code from an asynchronous operation such as this.
 
 # NO_CONTENT
 
 - No Content is a successful response. It is used when the request has succeeded,
   but that there is no new information to send back in the response payload body.
   Metadata in the response header fields refer to the target resource and its selected representation
-  after the requested action was applied.\*/
+  after the requested action was applied.
 
 ## BAD_REQUEST
 
 - Bad Request is a client error response. It is used when the request cannot be understood by the server
-  due to malformed syntax. The client SHOULD NOT repeat the request without modifications.\*/
+  due to malformed syntax. The client SHOULD NOT repeat the request without modifications.
 
 ## UNAUTHORIZED
 
 - Unauthorized is a client error response. It is used when the request has not been applied
-  because it lacks valid authentication credentials for the target resource.\*/
+  because it lacks valid authentication credentials for the target resource.
 
 ## FORBIDDEN
 
 - Forbidden is a client error response. It is used when the request has not been applied
-  because it lacks valid authentication credentials for the target resource.\*/
+  because it lacks valid authentication credentials for the target resource.
 
 ## NOT_FOUND
 
 - Not Found is a client error response. It is used when the origin server did not find a current representation
-  for the target resource or is not willing to disclose that one exists.\*/
+  for the target resource or is not willing to disclose that one exists.
 
 ## INTERNAL_SERVER_ERROR
 
-- Internal Server Error is a server error response. It is used when the server encountered an unexpected condition that prevented it from fulfilling the request.\*/
+- Internal Server Error is a server error response. It is used when the server encountered an unexpected condition that prevented it from fulfilling the request.
 
 ## BAD_GATEWAY
 
 - Bad Gateway is a server error response. It is used when the server, while acting as a gateway or proxy,
-  received an invalid response from the upstream server it accessed in attempting to fulfill the request.\*/
+  received an invalid response from the upstream server it accessed in attempting to fulfill the request.
 
 ## SERVICE_UNAVAILABLE
 
 - ervice Unavailable is a server error response. It is used when the server is currently unable to handle the request due to a temporary overload or scheduled maintenance, which will likely be alleviated after some delay.
   The server SHOULD send a Retry-After header field to suggest an appropriate amount of time for the client
-  to wait before retrying the request.\*/
+  to wait before retrying the request.
 
 ## GATEWAY_TIMEOUT
 
 - Gateway Timeout is a server error response. It is used when the server, while acting as a gateway or proxy,
   did not receive a timely response from an upstream server it needed to access in order to complete the request.
 
-**********\*\*\*\***********\*\*\*\***********\*\*\*\***********\_\_\_**********\*\*\*\***********\*\*\*\***********\*\*\*\***********
+---
 
 # PT-BR
 
@@ -192,7 +192,7 @@ The following are the most common HTTP headers:
 ## Códigos de status HTTP
 
 O código de status de resposta HTTP indica se uma solicitação HTTP específica foi concluída com êxito.
-As respostas são agrupadas em cinco classes:\*/
+As respostas são agrupadas em cinco classes:
 
 - 1xx: respostas informativas
 - 2xx: respostas bem-sucedidas
@@ -235,26 +235,26 @@ As respostas são agrupadas em cinco classes:\*/
 
 ## Cabeçalho HTTP
 
-Um cabeçalho HTTP consiste em seu nome que não diferencia maiúsculas de minúsculas seguido por dois pontos (:) e o valor do cabeçalho._/
-O formato geral de um cabeçalho HTTP é:_/
-Nome do Cabeçalho: Valor do Cabeçalho\*
+Um cabeçalho HTTP consiste em seu nome que não diferencia maiúsculas de minúsculas seguido por dois pontos (:) e o valor do cabeçalho.
+O formato geral de um cabeçalho HTTP é:
+Nome do Cabeçalho: Valor do Cabeçalho
 
 A seguir estão os cabeçalhos HTTP mais comuns:
 
 - Aceitar: o cabeçalho HTTP da solicitação Aceitar anuncia quais tipos de conteúdo, expressos como tipos MIME,
   o cliente é capaz de entender. Usando a negociação de conteúdo, o servidor seleciona uma das propostas,
-  usa e informa o cliente de sua escolha com o cabeçalho de resposta Content-Type.\*/
+  usa e informa o cliente de sua escolha com o cabeçalho de resposta Content-Type.
 - O cabeçalho HTTP da solicitação Accept-Charset anuncia quais conjuntos de caracteres o cliente é capaz de entender.
   Usando a negociação de conteúdo, o servidor seleciona uma das propostas, usa-a e informa o cliente de sua escolha com o cabeçalho de resposta Content-Type
-  Exemplo: Accept-Charset: utf-8\*
+  Exemplo: Accept-Charset: utf-8
 - Accept-Encoding: O cabeçalho HTTP da solicitação Accept-Encoding anuncia qual codificação de conteúdo, geralmente um algoritmo de compactação, o cliente é capaz de entender. Utilizando a negociação de conteúdo, o servidor seleciona uma das propostas, utiliza-a e informa ao cliente sua escolha com o cabeçalho de resposta Content-Type.
   Exemplo: Accept-Encoding: gzip, deflate
 - Accept-Language: O cabeçalho HTTP da solicitação Accept-Language anuncia quais idiomas o cliente pode entender e qual variante de localidade é preferida. Utilizando a negociação de conteúdo, o servidor seleciona uma das propostas, utiliza-a e informa ao cliente sua escolha com o cabeçalho de resposta Content-Type.
   Exemplo: Accept-Language: en-US
 - Autorização: O cabeçalho HTTP da solicitação de autorização contém as credenciais para autenticar um agente de usuário com um servidor, geralmente, mas não necessariamente, após o servidor ter respondido com um status 401 Unauthorized e o cabeçalho WWW-Authenticate.
-  Exemplo: Autorização: Básico QWxhZGRpbjpvcGVuIHNlc2FtZQ==\*
+  Exemplo: Autorização: Básico QWxhZGRpbjpvcGVuIHNlc2FtZQ==
 - Cache-Control: O campo de cabeçalho geral Cache-Control é usado para especificar diretivas que devem ser obedecidas por todos os mecanismos de cache ao longo da cadeia de solicitação/resposta
-  Exemplo: Cache-Control: no-cache\*
+  Exemplo: Cache-Control: no-cache
 
 ## DETALHES STATUS CODE
 
@@ -278,7 +278,7 @@ PT-BR
   de onde o usuário ou agente do usuário pode escolher o mais apropriado. O formato da entidade é especificado
   pelo tipo de mídia fornecido no cabeçalho Content-Type. O servidor de origem DEVE criar o recurso
   antes de retornar o código de status 201. Se a ação não puder ser executada imediatamente,
-  o servidor DEVE responder com a resposta 202 (Aceito) em vez disso.\*/
+  o servidor DEVE responder com a resposta 202 (Aceito) em vez disso.
 
 ## ACCEPTED
 
